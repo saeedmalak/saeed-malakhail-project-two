@@ -1,15 +1,73 @@
+// header {
+//   color: $primary;
+//   border: 5px dashed lighten($secondary, 20%);
+
+//   //Calling the mixin
+//   @include font-def(20px, gold);
+// }
+
+// h1 {
+//   background-color: red;
+//   color: darken($primary, 20%);
+
+//   //Calling the mixin with a diff value
+//   @include font-def(20px,white);
+// }
 header {
-  color: $primary;
-  border: 5px dashed lighten($secondary, 20%);
-
-  //Calling the mixin
-  @include font-def(20px, gold);
+  min-height: 100vh;
+  position: relative;
+  background-image: url('../assets/header-image.jpg');
+  background-size: cover;
+  // background-repeat: no-repeat;
 }
 
-h1 {
-  background-color: red;
-  color: darken($primary, 20%);
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+    .logo {
+      margin: 0;
+      padding-top: 6px;
+    }
+  }
 
-  //Calling the mixin with a diff value
-  @include font-def(20px,white);
+.main-nav {
+  padding: 0;
+  &__list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    &-item a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      padding: 20px 0 0 20px;
+      font-weight: bold; 
+    }
+  }  
 }
+
+h2 {
+  font-size: 5rem;
+  max-width: 300px;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.header-box {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+}
+

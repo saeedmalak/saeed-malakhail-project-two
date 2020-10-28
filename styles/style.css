@@ -236,38 +236,80 @@ html {
 }
 
 header {
-  color: purple;
-  border: 5px dashed #00e600;
-  font-size: 20px;
-  color: gold;
-}
-
-h1 {
-  background-color: red;
-  color: #1a001a;
-  font-size: 20px;
-  color: white;
-}
-
-ul {
-  background-color: aqua;
-}
-
-ul li {
-  border: 1px solid black;
-}
-
-ul li a {
-  text-decoration: none;
-}
-
-.box {
+  min-height: 100vh;
   position: relative;
-  top: 0;
-  left: 0;
-  background-color: blueviolet;
+  background-image: url("../assets/header-image.jpg");
+  background-size: cover;
 }
 
-footer {
-  background-color: blue;
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-nav .logo {
+  margin: 0;
+  padding-top: 6px;
+}
+
+.main-nav {
+  padding: 0;
+}
+
+.main-nav__list {
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-nav__list-item a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 20px 0 0 20px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 5rem;
+  max-width: 300px;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.header-box {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  max-width: 1240px;
+  width: 90%;
+  margin: 0 auto;
 }
