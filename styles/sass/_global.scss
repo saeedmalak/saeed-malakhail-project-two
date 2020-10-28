@@ -1,0 +1,18 @@
+// Defining my variables:
+$primary: purple;
+$secondary: green;
+
+//Declaration of a mixin
+@mixin font-def($size-value,$font-color) {
+  font-size: $size-value;
+  color: $font-color;
+}
+
+//Default values:
+@mixin position($type:relative, $top:0, $left:0){
+  position: $type;
+  top: $top;
+  left: $left;
+  background-color: blueviolet;
+}
+

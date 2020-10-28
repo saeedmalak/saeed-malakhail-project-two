@@ -1,0 +1,15 @@
+header {
+  color: $primary;
+  border: 5px dashed lighten($secondary, 20%);
+
+  //Calling the mixin
+  @include font-def(20px, gold);
+}
+
+h1 {
+  background-color: red;
+  color: darken($primary, 20%);
+
+  //Calling the mixin with a diff value
+  @include font-def(20px,white);
+}
