@@ -1,15 +1,13 @@
 @import 'setup';
 @import 'global';
+@import 'typography';
 @import 'header';
-@import 'main';
+@import 'about';
+@import 'store';
+@import 'info';
+@import 'banner';
+@import 'favorite';
+@import 'gallery';
 @import 'footer';
 
-html {
-  font-size: 62.5%;
-}
 
-.wrapper {
-  max-width: 1240px;
-  width: 90%;
-  margin: 0 auto;
-}

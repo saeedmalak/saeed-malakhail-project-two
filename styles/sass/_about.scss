@@ -1,0 +1,25 @@
+.about {
+  min-height: 70vh;
+  background-color: pink;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  &__heading {
+    font-size: 2.5rem;
+    max-width: 100%;
+    color: white;
+    text-transform: uppercase;
+  }
+  &__description {
+    max-width: 70%;
+  }
+  &__button {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: brown;
+    padding: 10px 20px;
+  }
+}

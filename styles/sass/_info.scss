@@ -1,0 +1,52 @@
+.more-info {
+  background-color: #d299d2;
+  padding: 125px 0 50px 0;
+  min-height: 50vh;
+}
+
+.info {
+  background-color: #d299d2;
+  display: grid;
+  gap: 40px 20px;
+  grid-template-areas: 
+    "info__location info__community" 
+    "info__blog info__contact";
+    i {
+      border-radius: 50%;
+      color: white;
+      background-color: black;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+    }
+    h3 {
+      margin: 0;
+      align-self: center;
+      font-size: 2.5rem
+    }
+    p {
+      grid-column: 2;
+      align-self: start;
+      margin: 5px 0 0 0;
+    }
+  &__location {
+    grid-area: info__location;
+  }
+  &__community {
+    grid-area: info__community;
+  }
+  &__blog {
+    grid-area: info__blog;
+  }
+  &__contact {
+    grid-area: info__contact;
+  }
+  &__location, &__community, &__blog, &__contact {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    grid-template-rows: 26px 1fr;
+    align-items: center;
+  }
+
+}
