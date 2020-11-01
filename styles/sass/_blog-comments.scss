@@ -1,0 +1,85 @@
+.comments-section {
+  background-color: $pale-mauve;
+  display: grid;
+  grid-template-columns: 545px 1fr;
+  padding: 70px 0 60px 0;
+  h4 {
+    margin: 0 0 25px -20px;
+  }
+}
+
+//COMMENTS SECTION styles
+
+.comment-box .comment1 {
+  display: grid;
+  margin-bottom: 60px;
+  gap: 0 60px;
+  grid-template-areas: 
+    "comment1__profile comment1__content";
+  &__profile {
+    grid-area: comment1__profile;
+    width: 93px;
+  }
+  &__content {
+    grid-area: comment1__content;
+    display: grid;
+    grid-template-rows: 26% 10%;
+  }
+  p:first-child {
+    grid-template-rows: 12%;
+    margin: 0;
+    font-weight: bold;
+  }
+  p:last-child {
+    margin: 0 70px 15px 0;
+  }
+}
+
+.comment-box .comment2 {
+  display: grid;
+  gap: 0 60px;
+  grid-template-areas: 
+    "comment2__profile comment2__content";
+  &__profile {
+    grid-area: comment2__profile;
+    width: 93px;
+  }
+  &__content {
+    grid-area: comment2__content;
+    display: grid;
+    grid-template-rows: 26% 10%;
+  }
+  p:first-child {
+    grid-template-rows: 12%;
+    margin: 0;
+    font-weight: bold;
+  }
+  .comment2__content > p:nth-child(2) {
+     margin: 0 70px 15px 0; 
+  }
+}
+
+// CONTACT FORM styles (changing only what's needed and re-using most of the code in the contact-form saas file
+
+.comment-box > *, .comment-box #name, .comment-box #email, .comment-box #text-box {
+  background-color: $pale-mauve;
+}
+
+.comment-box .contact-form form {
+  position: unset;
+  width: 90%;
+  background-color: $pale-mauve;
+  box-shadow: none;
+  padding: 0;
+  margin-left: 0;
+}
+
+textarea {
+  overflow-y: scroll;
+  height: 100px;
+  resize: none; 
+}
+
+.comment-box .submit-button {
+  background-color: $plum-purple;
+}

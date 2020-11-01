@@ -1,12 +1,12 @@
 .favorite-seller {
   min-height: 50vh;
-  margin-top: 70px;
+  margin: 0;
 }
 
 .favorite {
   display: grid;
   gap: 0 60px;
-  margin-top: 60px;
+  margin-top: 20px;
   grid-template-areas: 
     "favorite__img favorite__content";
   &__img {
@@ -16,19 +16,21 @@
     position: relative;
     figure {
       position: absolute;
-      top: -15px;
-      box-shadow: 18px 18px 0 0 orange;
+      top: 50px;
+      box-shadow: 25px 25px 0 0 $orange;
     }
   }
   &__content {
     grid-area: favorite__content;
     display: grid;
-    grid-template-rows: 20% 60% auto;
-    h3 { font-size: 2.5rem; }
-    p { font-size: 1.5rem; }
-    button { 
-      width: 130px; height: 25px; align-self: flex-end; font-size: 1.5rem;
+    grid-template-rows: 26% 54% 10%;
+    button {
+      @include button-def(uppercase, $white, $brown-red, 5px 15px, none);
+      width: 200px; height: 42px;
+    }
+    button:hover, button:focus {
+      background-color: $orange;
+      cursor: pointer;
     }
   }
-
 }

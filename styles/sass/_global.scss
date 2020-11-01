@@ -1,20 +1,18 @@
-// // Defining my variables:
-// $primary: purple;
-// $secondary: green;
+// Defining my variables
+$black: #0D0D0D;
+$brown-red: #882C07;
+$plum-purple: #4C0341;
+$pale-mauve: #FAE5FF;
+$orange: #ff8800;
+$white: #FFFFFF;
 
-// //Declaration of a mixin
-// @mixin font-def($size-value,$font-color) {
-//   font-size: $size-value;
-//   color: $font-color;
-// }
-
-// //Default values:
-// @mixin position($type:relative, $top:0, $left:0){
-//   position: $type;
-//   top: $top;
-//   left: $left;
-//   background-color: blueviolet;
-// }
+@mixin button-def ($btn-transform, $btn-color, $btn-bgd-color, $btn-padding, $btn-border) {
+  text-transform: $btn-transform;
+  color: $btn-color;
+  background-color: $btn-bgd-color;
+  padding: $btn-padding;
+  border: $btn-border;
+}
 
 html {
   font-size: 62.5%;

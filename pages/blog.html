@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoe Kloset Blog Page</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pompiere&display=swap" rel="stylesheet">
+  <!-- Font Awesome Kit Code -->
+  <script src="https://kit.fontawesome.com/b5138e5c42.js" crossorigin="anonymous"></script>
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="blog-header">
+    <div class="wrapper">
+      <div class="header-nav">
+        <h1 class="logo">Shoe Kloset</h1>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item"><a href="../index.html">Home</a></li>
+            <li class="main-nav__list-item"><a href="../index.html#about">About</a></li>
+            <li class="main-nav__list-item"><a href="#">Blog</a></li>
+            <li class="main-nav__list-item"><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <h2 class="blog-title">BLOG</h2>
+    </div>
+  </header>
+
+  <!-- main section  -->
+  <main>
+    <!-- blog section  -->
+    <section class="blog-section">
+
+      <div class="blog-page">
+
+        <aside class="aside wrapper">
+          <figure>
+            <img src="../assets/sidebar-image.jpg"
+              alt="someone jumping off the floor showing a close up view of black running shoes">
+          </figure>
+          <figcaption>
+            <h5>Any Weather</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A vitae aliquam assumenda error. Assumenda nostrum
+              repudiandae veritatis temporibus, necessitatibus aliquam!</p>
+          </figcaption>
+          <div class="recent-posts-container">
+            <h5>Recent Posts</h5>
+            <ul>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </div>
+        </aside>
+
+        <article class="blog-content">
+          <figure>
+            <img src="../assets/blog-post-image.jpg" alt="Couple of ladies walking in their high heels!">
+          </figure>
+          <div class="blog-article">
+            <h2>Shoes Around The World</h2>
+            <h3 class="blog-date">Monday May 4th, 2019 by Dieula</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, corporis qui! Libero praesentium corporis in. Architecto porro eos ullam, itaque magnam, natus vitae beatae quas ea accusantium consequuntur perspiciatis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum eveniet ipsum tempore molestiae aut perspiciatis, qui repellat non ipsam porro libero minus, sunt quae. Itaque ducimus odio voluptas temporibus sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque corporis maxime. Nulla accusamus earum vel eveniet excepturi eos.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, corporis qui! Libero praesentium corporis in. Architecto porro eos ullam, itaque magnam, natus vitae beatae quas ea accusantium consequuntur perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod exercitationem aliquam voluptatibus mollitia ut ex accusantium! Mollitia fugit repellendus, itaque aspernatur rerum et, magnam impedit architecto, labore animi asperiores? Quos consequuntur quod perferendis nihil dolor vero inventore error molestias dolorum voluptatibus tenetur voluptate accusantium aspernatur, delectus recusandae voluptatem optio! Libero?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, corporis qui! Libero praesentium corporis in. Architecto porro eos ullam, itaque magnam, natus vitae beatae quas ea accusantium consequuntur perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, itaque. Rerum sapiente officiis tempora blanditiis, mollitia quaerat consectetur nesciunt quibusdam voluptatem laboriosam, ratione, accusamus perferendis.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="comments-section">
+      <div class="empty-box">
+      </div>
+      <div class="comment-box">
+        <h4>Comments:</h4>
+        <div class="comment1">
+          <div class="comment1__profile">
+            <figure>
+              <img src="../assets/comment-1.jpg" alt="A man's avatar profile image">
+            </figure>
+          </div>
+          <div class="comment1__content">
+            <p>Tuesday November 21th, 2019 by Jeremy</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non doloremque corporis dolores culpa dolorem at ipsum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque libero, neque odit possimus tenetur ea tempore officiis est velit! Ratione!</p>
+          </div>
+        </div>
+        
+        <div class="comment2">
+          <div class="comment2__profile">
+            <figure>
+              <img src="../assets/comment-2.jpg" alt="A woman's avatar profile image">
+            </figure>
+          </div>
+          <div class="comment2__content">
+            <p>Wednesday November 10th, 2019 by Julia</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non doloremque corporis dolores culpa dolorem at ipsum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque libero, neque odit possimus tenetur ea tempore officiis est velit! Ratione!</p>
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact form section  -->
+        <div class="contact-form">
+          <form class="form">
+            <label for="name" class="sr-only">Provide your first name</label>
+            <input id="name" type="text" name="name" required placeholder="Name">
+            <label for="email" type="email" class="sr-only">Provide your email address></label>
+            <input id="email" type="text" name="email" required placeholder="Email address">
+            <label for="text-box" class="sr-only">Provide your comment here></label><textarea id="text-box" name="text-box" class="contact-message-box" required placeholder="Comment" rows="7" cols="50"></textarea>
+            <button class="submit-button" type="submit">Post Comment</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="copyright">
+      <p>Copyright <span><i class="far fa-copyright"></i></span> 2020 Created at
+        <a href="https://junocollege.com" aria-label="Juno College's main website">Juno College</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -5,16 +5,28 @@
   grid-template-areas: 
     "store__left-img-container store__left-img-content" 
     "store__right-img-content store__right-img-container";
+
     p {margin: 0 0 20px 0}
-    h2 {margin: 0 0 20px 0}
+    h4 {margin: 0 0 20px 0}
+
+    button {
+      @include button-def(uppercase, $white, $brown-red, 5px 15px, none);
+    }
+
+    button:hover, button:focus {
+      background-color: $orange;
+      cursor: pointer;
+    }
+
     .wrapper {margin: 0;}
+
   &__left-img-container {
     grid-area: store__left-img-container;
     position: relative;
     figure {
       position: absolute;
       top: -15%;
-      box-shadow: 18px 18px 0 0 orange;
+      box-shadow: 18px 18px 0 0 $orange;
     }
   }
   &__left-img-content {
@@ -23,14 +35,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    p {margin: 0 0 20px 0};
   }
   &__right-img-container {
     grid-area: store__right-img-container;
     position: relative;
     figure {
       position: absolute;
-      box-shadow: -18px 18px 0 orange;
+      box-shadow: -18px 18px 0 $orange;
     }
   }
   &__right-img-content {
@@ -40,6 +51,5 @@
     justify-content: center;
     align-items: flex-end;
     text-align: right;
-    p {margin: 0 0 20px 0};
   } 
 }

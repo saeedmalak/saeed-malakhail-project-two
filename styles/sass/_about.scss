@@ -1,6 +1,6 @@
 .about {
-  min-height: 70vh;
-  background-color: pink;
+  min-height: 80vh;
+  background-color: $pale-mauve;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -8,18 +8,20 @@
   justify-content: center;
   text-align: center;
   &__heading {
-    font-size: 2.5rem;
     max-width: 100%;
-    color: white;
+    margin: 0;
     text-transform: uppercase;
   }
   &__description {
     max-width: 70%;
+    margin: 20px 0;
   }
   &__button {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    color: brown;
-    padding: 10px 20px;
+    @include button-def(uppercase, $white, $plum-purple, 5px 15px, none);
+  }
+  &__button:hover, &__button:focus {
+    background-color: $orange;
+    cursor: pointer;
   }
 }
+

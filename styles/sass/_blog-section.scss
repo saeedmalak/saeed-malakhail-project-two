@@ -1,0 +1,82 @@
+.blog-section {
+  min-height: 80vh;
+  padding-top: 100px;
+  background-color: $pale-mauve;
+}
+
+.blog-page {
+  display: grid;
+  gap: 25px;
+  grid-template-areas:
+    "aside blog-content"
+}
+
+.aside {
+  grid-area: aside;
+  max-width: 500px;
+  height: 777px;
+}
+
+.blog-content {
+  grid-area: blog-content;
+  max-height: 1049px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-content figure {
+  position: relative;
+  left: 20px;
+  top: -230px;
+  width: 98%;
+  img { box-shadow: -20px 20px $orange; }
+}
+
+.blog-content .blog-article {
+  position: relative;
+  top: -210px;
+  box-shadow: 0 0 white;
+  padding: 50px 60px 0 50px;
+  background-color: $white;
+}
+
+.blog-article h2 {
+  margin-bottom: 0;
+  color: $plum-purple;
+}
+
+.blog-article .blog-date {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: $black;
+  line-height: 29px;
+  text-transform: capitalize;
+}
+
+.aside {
+  background-color: $white;
+  padding: 15px;
+}
+
+.aside figure {
+  position: relative;
+  width: 450px;
+  top: -40px;
+  left: -60px;
+  margin: 0
+}
+
+.aside .recent-posts-container {
+  margin-top: 50px;
+}
+
+.aside h5 {
+  font-size: 3rem;
+  margin: 20px 0 0 0;
+}
+
+.aside ul {
+  padding-left: 20px
+}
+

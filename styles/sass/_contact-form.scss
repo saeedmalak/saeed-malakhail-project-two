@@ -1,0 +1,104 @@
+.contact-form-section {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  background-color: $pale-mauve;
+  p { margin: 0};
+}
+
+// COMPANY INFO styles
+.company-info {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 150px 1fr;
+  padding-left: 29px;
+  position: relative;
+  top: -45px;
+  right: -100px;
+}
+
+.socials {
+  align-self: flex-end;
+}
+
+.company-info .social-icons {
+  list-style: none;
+  display: flex;
+  li {
+    margin-left: 20px;
+  }
+}
+
+.social-icons a:hover, .social-icons a:focus {
+  color: $brown-red;
+  cursor: pointer;
+}
+
+.company-info .address {
+  margin-left: 20px;
+  padding-left: 40px;
+}
+
+.address > p:nth-child(1) {
+  font-family: 'Pompiere', cursive;
+  font-size: 2.5rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+// Contact Us Form styles
+.contact-form form {
+  position: relative;
+  top: -150px;
+  left: 150px;
+  background-color: $white;
+  box-shadow: -20px 20px $orange;
+  padding: 40px 30px 25px 30px;
+  display: grid;
+  gap: 25px;
+  width: 80%;
+  margin-left: 40px;
+  grid-template-areas: 
+    "name email"
+    "contact-message-box contact-message-box"
+    "submit-button submit-button";
+}
+
+#name {
+  grid-area: name;
+}
+
+#email {
+  grid-area: email;
+}
+
+#name, #email {
+  border: 0;
+  border-bottom: 1px solid $orange;
+  padding: 0 0 10px 15px;
+}
+
+.contact-form .contact-message-box {
+  grid-area: contact-message-box;
+  border: 1px solid $orange;
+  height: 200px;
+  padding: 20px;
+}
+
+.contact-form .submit-button {
+  grid-area: submit-button;
+}
+
+.contact-form button {
+  @include button-def(uppercase, $white, $brown-red, 5px 0, none);
+  margin-bottom: 5px;
+}
+
+.contact-form button:hover, .contact-form button:focus {
+  background-color: red;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+
+
