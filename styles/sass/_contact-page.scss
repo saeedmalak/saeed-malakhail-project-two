@@ -21,5 +21,28 @@
       left: 100px;
     }
   }
+}
+
+@media (max-width: 600px) {
+
+  .contact-form-section {
+    grid-template-rows: 100px 1fr;
+    .company-info {
+      right: 0;
+      padding-left: 0;
+      grid-template-rows: 80px 1fr;
+    }
+  }
+  .contact-form-section .contact-form form {
+    left: 0px;
+    grid-template-areas: 
+    "name"
+    "email"
+    ".contact-message-box"
+    ".submit-button";
+    margin-left: 50px;
+  }
+  
+  // ran out of time :(
 
 }
