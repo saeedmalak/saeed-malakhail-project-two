@@ -18,7 +18,10 @@
     <div class="wrapper">
       <div class="header-nav">
         <h1 class="logo">Shoe Kloset</h1>
+        <!-- Create the menu using a hidden checkbox -->
         <nav class="main-nav">
+          <label for="toggle"><i class="fa fa-bars"></i></label>
+          <input type="checkbox" id="toggle" name="toggle"/>
           <ul class="main-nav__list">
             <li class="main-nav__list-item"><a href="#">Home</a></li>
             <li class="main-nav__list-item"><a href="#about">About</a></li>
@@ -28,7 +31,7 @@
         </nav>
       </div>
 
-      <h6 class="title">Find something new</h6>
+      <h6 class="title">Find <span class="title-style">something </span>new</h6>
       <div class="header-box">
         <figure>
           <img class="header-box__img" src="./assets/home-box-header.png" alt="A thick orange border box with bright color running shoes & high heels">

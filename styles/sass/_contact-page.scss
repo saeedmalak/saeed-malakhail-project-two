@@ -1,0 +1,25 @@
+// CONTACT FORM media queries 
+@media (max-width: 1078px) {
+  .contact-header {
+    min-height: 60vh;
+    background-position: 20%; 
+    .contact-title {
+      margin-top: 35px;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .contact-form-section {
+    grid-template-columns: 100px 1fr;
+    .company-info {
+      grid-template-rows: 139px 1fr;
+      padding-left: 0;
+      right: -40px
+    }
+    .contact-form form {
+      left: 100px;
+    }
+  }
+
+}
